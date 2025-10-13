@@ -9,11 +9,11 @@ class Book:
 
     def __del__(self):
         """Print a message when a Book object is deleted."""
-        print(f"Deleting '{self.title}'")
+        print(f"Deleting {self.title}")
 
     def __str__(self):
         """Return a user-friendly string representation of the book."""
-        return f"'{self.title}' by {self.author}, published in {self.year}"
+        return f"{self.title} by {self.author}, published in {self.year}"
 
     def __repr__(self):
         """Return an official string representation that can recreate the object."""
